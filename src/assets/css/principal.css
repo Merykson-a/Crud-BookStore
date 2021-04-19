@@ -1,0 +1,73 @@
+.p-datepicker{
+    height: 54vh;
+    width: 50vh;
+  
+  }
+  .p-datepicker table {
+      font-size: 0.7rem;
+      margin: 0rem 0;
+  }
+  .p-datepicker table td {
+      padding: 0rem;
+  }
+.p-inputnumber-buttons-stacked .p-inputnumber-input {
+    width: 50px;
+    height: 37px;
+}
+.p-inputnumber-buttons-stacked .p-inputnumber-button-group .p-inputnumber-button {
+    width: 30px;
+    height: 10px
+}
+button {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+b{
+    margin-left: 1%;
+    margin-right: 1%;
+}
+#margem div.p-d-flex:first-child{
+    margin-top: 2.5%;
+}
+#margem div.p-d-flex{
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+#margem .p-mb-2{
+    margin-left: 0.5%;
+    margin-right: 1%;
+}
+#alterarTop{
+    margin-top: 1.5%;
+    font-size: 25px;
+}
+.p-invalid{
+    border-color: #a80000;    
+}
+#status{
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 15px;
+    width: 15px;
+}
+.entregue-prazo{
+    background-color: 	#66bb6a;
+}
+.entregue-atrasado{
+    background-color: 	#FF0000;
+}
+.em-andamento{
+    background-color: #42a5f5;
+}
+.p-orderlist-controls{
+    display: none;
+}
+.p-orderlist.p-component{
+    margin-top: 2%;    
+}
+
+
+
+
