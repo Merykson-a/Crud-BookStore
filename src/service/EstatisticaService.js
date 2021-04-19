@@ -3,7 +3,8 @@ import axios from 'axios';
 export default class EstatisticaService {
 
 
-    url = 'http://localhost:8080/api/estatistica/';
+        // url = 'http://localhost:8080/api/';
+        url = 'https://livraria-wda-api-rest.herokuapp.com/api/';
 
     getTotalData() {
         return axios.get(this.url + "total");
