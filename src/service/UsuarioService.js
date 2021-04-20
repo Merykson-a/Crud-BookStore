@@ -1,23 +1,22 @@
 import axios from 'axios';
 
 export default class UsuarioService {
-    
-        // url = 'http://localhost:8080/api/';
-        url = 'https://livraria-wda-api-rest.herokuapp.com/api/';
-    
+    // url = 'http://localhost:8080/api/';
+    url = 'http://localhost:8080/api/';
+    // url = 'https://livraria-wda-api-rest.herokuapp.com/api/';
+
     getAll() {
-        return axios.get(this.url + "usuario");
+        return axios.get(this.url + 'usuario');
     }
-    salvar(usuario){
-        return axios.post(this.url + "usuario", usuario);
+    salvar(usuario) {
+        return axios.post(this.url + 'usuario', usuario);
     }
-    apagar(usuario){
-        return axios.delete(this.url + "usuario", {
+    apagar(usuario) {
+        return axios.delete(this.url + 'usuario', {
             data: usuario
         });
     }
-    atualizar(usuario){
-        return axios.put(this.url + "usuario", usuario);
+    atualizar(usuario) {
+        return axios.put(this.url + 'usuario', usuario);
     }
-    
 }
