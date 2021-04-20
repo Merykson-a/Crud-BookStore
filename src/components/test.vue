@@ -3,7 +3,7 @@
         <div class="p-mb-2" id="dashboard">
             <Card>
                 <template #title>
-                    Editoras
+                    Editorass
                 </template>
                 <template #content> Total: {{ dados.qtdE }} </template>
             </Card>
