@@ -74,7 +74,6 @@
                     id="margem"
                     :header="usuario.id === null ? 'Adicionar Usuário' : 'Editar Usuário'"
                     :visible.sync="displayModal"
-                    :style="{ width: '40vw' }"
                     :modal="true"
                 >
                     <div class="p-d-flex" :style="{ width: '100%' }">

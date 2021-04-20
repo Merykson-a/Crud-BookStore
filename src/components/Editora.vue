@@ -77,7 +77,6 @@
                     id="margem"
                     :header="editora.id === null ? 'Adicionar Editora' : 'Editar Editora'"
                     :visible.sync="displayModal"
-                    :style="{ width: '30vw' }"
                     :modal="true"
                 >
                     <div class="p-d-flex" :style="{ width: '100%' }">

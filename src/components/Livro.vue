@@ -79,7 +79,6 @@
                     :contentStyle="{ overflow: 'visible' }"
                     :header="livro.id === null ? 'Adicionar Livro' : 'Editar Livro'"
                     :visible.sync="displayModal"
-                    :style="{ width: '40vw' }"
                     :modal="true"
                 >
                     <div class="p-d-flex" :style="{ width: '100%' }">

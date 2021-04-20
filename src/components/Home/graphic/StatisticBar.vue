@@ -1,5 +1,5 @@
 <template>
-    <div><Chart type="line" :data="basicData" /></div>
+    <div><Chart type="line" :data="basicData" :options="options" /></div>
 </template>
 
 <script>
@@ -11,6 +11,24 @@ export default {
             dataData: [],
             livros: null,
             basicData: null,
+            options: {
+                legend: {
+                    display: false
+                },
+                scales: {
+                    yAxes: [
+                        {
+                            ticks: {
+                                callback: function(value) {
+                                    if (value % 1 === 0) {
+                                        return value;
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
             height: 100,
             contador: null
         };
@@ -45,8 +63,9 @@ export default {
                 labels: this.dataLabels,
                 datasets: [
                     {
-                        label: 'Quantidade de aluguel por livro',
-                        backgroundColor: '#42A5F5',
+                        fill: false,
+                        backgroundColor: '#FFA726',
+                        borderColor: '#FFA726',
                         data: this.dataData
                     }
                 ]

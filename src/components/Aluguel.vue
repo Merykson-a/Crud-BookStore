@@ -113,7 +113,6 @@
                     :contentStyle="{ overflow: 'visible' }"
                     :header="aluguel.id === null ? 'Fazer aluguel' : !acaoDevolucao ? 'Editar aluguel' : 'Devolver'"
                     :visible.sync="displayModal"
-                    :style="{ width: '40vw' }"
                     :modal="true"
                 >
                     <div>
@@ -173,7 +172,7 @@
                                         :style="{ width: '100%' }"
                                         :showButtonBar="true"
                                         :locale="br"
-                                        id="navigators"
+                                        id="ajeitar"
                                         v-model="aluguel.dataAluguel"
                                         :monthNavigator="true"
                                         :yearNavigator="true"
@@ -638,15 +637,14 @@ export default {
 };
 </script>
 <style>
-.p-buttonset .p-button {
+.p-buttonset.p-button {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
-
 @media screen and (max-width: 64em) {
     .p-datatable-thead > tr > th,
     .p-datatable-tfoot > tr > td {
-        display: none !important;
+        display: inline-flex !important;
     }
     .p-datatable-tbody > tr > td {
         text-align: left;
@@ -659,10 +657,13 @@ export default {
     }
     .p-column-title {
         padding: 0.4rem;
-        min-width: 60%;
+        min-width: 30%;
         display: inline-block;
         margin: -0.4rem 1rem -0.4rem -0.4rem;
         font-weight: bold;
+    }
+    .p-dialog.p-component {
+        width: 100vw;
     }
 }
 </style>
