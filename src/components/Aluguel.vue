@@ -4,6 +4,7 @@
             <Toast />
             <div class="card">
                 <DataTable
+                    class="p-datatable-customers"
                     ref="dt"
                     :value="alugueis"
                     :paginator="true"
@@ -640,5 +641,28 @@ export default {
 .p-buttonset .p-button {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
+}
+
+@media screen and (max-width: 64em) {
+    .p-datatable-thead > tr > th,
+    .p-datatable-tfoot > tr > td {
+        display: none !important;
+    }
+    .p-datatable-tbody > tr > td {
+        text-align: left;
+        display: block;
+        border: 0 none !important;
+        width: 100% !important;
+        float: left;
+        clear: left;
+        border: 0 none;
+    }
+    .p-column-title {
+        padding: 0.4rem;
+        min-width: 60%;
+        display: inline-block;
+        margin: -0.4rem 1rem -0.4rem -0.4rem;
+        font-weight: bold;
+    }
 }
 </style>

@@ -4,14 +4,13 @@
             <Toast />
             <div class="card">
                 <DataTable
+                    :rowHover="true"
                     ref="dt"
                     :value="editoras"
                     :paginator="true"
                     :rows="rows"
                     dataKey="id"
                     :filters="filters"
-                    :rowHover="true"
-                    responsiveLayout="scroll"
                     paginatorTemplate="FirstPageLink PrevPageLink PageLinks NextPageLink LastPageLink CurrentPageReport RowsPerPageDropdown"
                     :rowsPerPageOptions="[5, 10, 25]"
                     :loading="loading"
@@ -326,5 +325,5 @@ export default {
     }
 };
 </script>
-<style scoped>
+<style>
 </style>
