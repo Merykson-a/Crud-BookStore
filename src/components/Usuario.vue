@@ -299,7 +299,6 @@ export default {
                 .catch(error => {
                     this.zerarSubmitt();
                     this.erros = error.response.data.errors;
-                    console.log(this.erros);
                 });
         },
         fecharModal() {
@@ -373,7 +372,6 @@ export default {
                 .catch(error => {
                     this.zerarSubmitt();
                     this.erros = error.response.data.errors;
-                    console.log(this.erros);
                 });
         },
         fecharModalDelete() {

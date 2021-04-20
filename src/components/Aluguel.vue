@@ -603,7 +603,6 @@ export default {
             );
         },
         devolverConfirm() {
-            console.log('executando');
             if (
                 this.aluguel.dataDevolucao != '' &&
                 this.aluguel.dataDevolucao != 'Data Inválida' &&

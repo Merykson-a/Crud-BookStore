@@ -394,7 +394,6 @@ export default {
                         this.submittedE = true;
                     }
                     this.erros = error.response.data.errors;
-                    console.log(this.erros);
                 });
         },
         fecharModal() {
@@ -439,7 +438,6 @@ export default {
                     if (this.erros == null || this.erros == '') {
                         this.erroLivro = error.response.data;
                     }
-                    console.log(this.erroLivro);
                 });
         },
         mensagemExcluir(livro) {
@@ -460,7 +458,6 @@ export default {
                             life: 3000
                         });
                     } else {
-                        console.log('oi');
                         this.$toast.add({
                             severity: 'error',
                             summary: 'Erro ao apagar!',

@@ -223,7 +223,6 @@ export default {
             this.editoraService
                 .salvar(this.editora)
                 .then(data => {
-                    console.log(data.erros);
                     if (data.status == 200) {
                         this.displayModal = false;
                         this.getAll();
@@ -246,7 +245,6 @@ export default {
                     this.submittedN = false;
                     this.submittedC = false;
                     this.erros = error.response.data.errors;
-                    console.log(this.erros);
                 });
         },
         fecharModal() {
@@ -285,7 +283,6 @@ export default {
                     this.submittedN = false;
                     this.submittedC = false;
                     this.erros = error.response.data.errors;
-                    console.log(this.erros);
                 });
         },
         mensagemExcluir(editora) {
