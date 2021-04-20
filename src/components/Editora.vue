@@ -305,6 +305,7 @@ export default {
                     }
                 })
                 .catch(() => {
+                    console.clear();
                     this.deleteEditoraModal = false;
                     this.getAll();
                     this.$toast.add({

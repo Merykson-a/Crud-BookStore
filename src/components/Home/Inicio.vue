@@ -2,7 +2,7 @@
     <div id="margem">
         <cards-dados></cards-dados>
         <div class="p-grid">
-            <div class="p-col">
+            <div class="p-col" id="legal">
                 <Fieldset legend="Gráfico - Resumo situações aluguéis" :toggleable="true">
                     <statistic-pie></statistic-pie>
                 </Fieldset>
@@ -64,5 +64,11 @@ export default {
 .p-card-body {
     margin-top: 3%;
     background: #5c5c5c1e;
+}
+@media screen and (max-width: 25em) {
+    .p-col .p-orderlist.p-component {
+        background: black;
+        width: 350px;
+    }
 }
 </style>
