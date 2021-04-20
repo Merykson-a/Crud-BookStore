@@ -47,7 +47,7 @@ import EstatisticaService from '../../../service/EstatisticaService';
 export default {
     data() {
         return {
-            dados: ''
+            dados: 0
         };
     },
     estatisticaService: null,
