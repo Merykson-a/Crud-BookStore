@@ -1,9 +1,7 @@
 import axios from 'axios';
 
 export default class EditoraService {
-    // url = 'http://localhost:8080/api/';
-    url = 'http://localhost:8080/api/';
-    // url = 'https://livraria-wda-api-rest.herokuapp.com/api/';
+    url = 'https://livraria-wda-api-rest.herokuapp.com/api/';
 
     getAll() {
         return axios.get(this.url + 'editora');
