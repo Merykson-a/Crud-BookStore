@@ -23,6 +23,7 @@ import Tooltip from 'primevue/tooltip';
 import OrderList from 'primevue/orderlist';
 import Password from 'primevue/password';
 import Fieldset from 'primevue/fieldset';
+import Toolbar from 'primevue/toolbar';
 
 Vue.use(ToastService);
 Vue.use(Chart);
@@ -36,6 +37,7 @@ import '../src/assets/css/principal.css';
 
 Vue.config.productionTip = false;
 
+Vue.component('Toolbar', Toolbar);
 Vue.component('Fieldset', Fieldset);
 Vue.component('DataTable', DataTable);
 Vue.component('Column', Column);

@@ -2,7 +2,10 @@
     <div id="app">
         <div class="content">
             <Panel classStyle="inicio">
-                <TabMenu :model="items" />
+                <div class="p-grid">
+                    <img src="@/assets/bookstore.png" id="img" />
+                    <TabMenu :model="items" />
+                </div>
             </Panel>
             <router-view />
         </div>
@@ -50,5 +53,12 @@ footer {
     bottom: 0;
     left: 0;
     text-align: center;
+}
+#img {
+    margin-top: -1%;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 4.5%;
+    height: 4.5%;
 }
 </style>
