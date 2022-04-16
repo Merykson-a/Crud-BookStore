@@ -1,4 +1,4 @@
-# livraria-wda
+# bookstore
 
 ## Project setup
 ```
